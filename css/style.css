@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-spacing: 0;
+} 
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'Gubia Regular';
+    src: url(/fonts/Gubia.eot);
+    src: url(/fonts/Gubia.eot?#iefix) format('embedded-opentype'),
+    url(/fonts/Gubia.woff) format('woff'),
+    url(/fonts/Gubia.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    color: #F0F0F0;
+    font-family: 'Gubia Regular';
+    line-height: 1;
+}
+.body {
+    background-image: url(/img/black-wall.jpg);
+}
+
+.wellcome {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+    /* background-image: url(/img/platabel.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+.top-row {
+    width: 100%;
+    height: 95px;
+    background-color: #161616;
+    /* background-image: url(/img/platabel.png); */
+    background-position: 1000px -610px;
+    background-repeat: no-repeat;
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+.top-row-container {
+    display: flex;
+    justify-content: space-between;
+}
+.logo-block {
+    display: flex;
+}
+.logo-row {
+    font-size: 50px;
+}
+.logo {
+    text-align: center;
+    margin-top: -5px;
+    letter-spacing: 1px;
+}
+.logo-rv {
+    color: #7AB63B;
+    text-transform: uppercase;
+    font-size: 74px;
+}
+.logo-text {
+    display: block;
+    margin-top: -14px;
+    font-size: 26px;
+    font-weight: bold;
+}
+.row-phone {
+    margin: 19px 0 0 50px;
+}
+.row-phone-link {
+    color: #7AB63B;
+    font-size: 30px;
+    transition: .3s;
+}
+.row-phone-link:hover {
+    color: #B1ED72;   
+}
+
+.row-address {
+    font-size: 24px;
+}
+.nav-list {
+    display: flex;
+    margin-top: 37px;
+}
+.nav-list::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    background-color: #7AB63B;
+    top: 20px;
+    margin-left: -20px;
+}
+.nav-item:nth-child(n+2) {
+    margin-left: 29px;
+}
+.nav-link {
+    color: #F0F0F0;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+.nav-link:hover {
+    color: #7AB63B;   
+}
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+.card {
+    margin-top: 70px;
+    display: flex;
+    /* background-color: #333333; */
+    width: 600px;
+}
+
+.card-img-container {
+    width: 100%;
+    height: 85px;
+    border-radius: 5px 25px;
+    background-image: url(/img/card-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-transition: background-size 500ms linear;
+    -moz-transition: background-size 500 linear;
+    -o-transition: background-size 500 linear;
+    -ms-transition: background-size 500ms linear;
+    transition: background-size 500ms linear;
+}
+.card-img-container:hover {
+    background-size: 350%;
+}
+.card-text {
+    margin: 5px 0 0 25px;
+    font-size: 20px;
+}
