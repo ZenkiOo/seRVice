@@ -61,12 +61,25 @@ a {
     font-style: normal;
 }
 body {
-    color: #F0F0F0;
     font-family: 'Gubia Regular';
     line-height: 1;
 }
 .body {
+    width: 100%;
+    color: #D0D0D0;
+    position: relative;
     background-image: url(/img/black-wall.jpg);
+    background-repeat: no-repeat;
+}
+.body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .8;
 }
 
 .wellcome {
@@ -81,7 +94,7 @@ body {
     z-index: 1;
 }
 .top-row {
-    width: 100%;
+    min-width: 100%;
     height: 80px;
     background-color: #161616;
     /* background-image: url(/img/platabel.png); */
@@ -89,7 +102,7 @@ body {
     background-repeat: no-repeat;
 }
 .wrapper {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .top-row-container {
@@ -97,9 +110,12 @@ body {
     justify-content: space-between;
 }
 .logo-block {
+    width: 65%;
     display: flex;
+    justify-content: space-between;
 }
 .logo-row {
+    display: block;
     font-size: 46px;
     line-height: 53px;
 }
@@ -116,17 +132,23 @@ body {
     /* text-shadow: rgb(72, 139, 0) 0 0 4px; */
 }
 .logo-text {
+    width: 145px;
     display: block;
     margin-top: -12px;
     font-size: 24px;
     font-weight: bold;
 }
 .row-phone {
-    margin: 10px 0 0 260px;
+    /* margin: 10px 0 0 260px; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: flex-end;
+    /* margin-left: 20%; */
 }
 .row-phone-link {
     display: block;
-    margin-left: 153px;
+    /* margin-left: 153px; */
     margin-top: 5px;
     color: #7AB63B;
     font-size: 35px;
@@ -137,7 +159,12 @@ body {
 }
 
 .row-address {
+    display: block;
     font-size: 16px;
+}
+.nav {
+    /* padding-left: 6%; */
+    min-width: 35%;
 }
 .nav-list {
     display: flex;
@@ -153,7 +180,7 @@ body {
     margin-left: -50px;
 }
 .nav-item:nth-child(n+2) {
-    margin-left: 29px;
+    margin-left: 8%;
 }
 .nav-link {
     color: #F0F0F0;
@@ -173,6 +200,7 @@ body {
     padding: 30px 15px;
 }
 .card {
+    margin-top: 1000px;
     display: flex;
     /* background-color: #333333; */
     width: 600px;
@@ -188,7 +216,7 @@ body {
     background-image: url(/img/hz.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 200%;
+    background-size: 140%;
     -webkit-transition: background-size 500ms linear;
     -moz-transition: background-size 500 linear;
     -o-transition: background-size 500 linear;
@@ -202,13 +230,18 @@ body {
     
 }
 .card-img-container::before {
-    content: "хуй";
+    content: "";
+    width: 46px;
+    height: 46px;
+    border-radius: 25px;
     visibility: hidden;
     position: absolute;
-    left: 12px;
-    top: 12px;
+    left: 7px;
+    top: 8px;
     font-size: 30px;
     font-weight: bold;
+    transition: .5s;
+
 }
 .card-img-container:hover {
     background-size: 1100%;
@@ -220,7 +253,7 @@ body {
 }
 .card-img-container:hover::before{
     visibility: visible;
-    color: red;
+    background-color: #69A52A;
 }
 .card-text {
     margin: 5px 0 0 25px;
@@ -250,4 +283,9 @@ body {
 .logo-image {
     width: 175px;
     height: 60px;
+}
+.works {
+    padding-top: 200px;
+    width: 65%;
+    margin: 0 auto;
 }
