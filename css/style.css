@@ -118,7 +118,7 @@ body {
 .logo-text {
     display: block;
     margin-top: -12px;
-    font-size: 23px;
+    font-size: 24px;
     font-weight: bold;
 }
 .row-phone {
@@ -173,39 +173,81 @@ body {
     padding: 30px 15px;
 }
 .card {
-    margin-top: 70px;
     display: flex;
     /* background-color: #333333; */
     width: 600px;
 }
 
 .card-img-container {
-    width: 100%;
-    height: 65px;
-    border-radius: 20px 20px;
-    background-image: url(/img/card-img.jpg);
+    position: relative;
+    margin-top: 20px;
+    width: 31%;
+    height: 60px;
+    border-radius: 45px 45px;
+    /* background-image: url(/img/card-img.jpg); */
+    background-image: url(/img/hz.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 200%;
     -webkit-transition: background-size 500ms linear;
     -moz-transition: background-size 500 linear;
     -o-transition: background-size 500 linear;
     -ms-transition: background-size 500ms linear;
     transition: background-size 500ms linear;
+    -webkit-transition: rotate 900ms linear;
+    -moz-transition: rotate 900 linear;
+    -o-transition: rotate 900 linear;
+    -ms-transition: rotate 900ms linear;
+    transition: 900ms linear;
+    
+}
+.card-img-container::before {
+    content: "хуй";
+    visibility: hidden;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    font-size: 30px;
+    font-weight: bold;
 }
 .card-img-container:hover {
-    background-size: 350%;
-    -webkit-transform: rotate(60deg);
-  -moz-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  -o-transform: rotate(60deg);
-  transform: rotate(60deg);
+    background-size: 1100%;
+    -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.card-img-container:hover::before{
+    visibility: visible;
+    color: red;
 }
 .card-text {
     margin: 5px 0 0 25px;
     font-size: 20px;
+    position: relative;
+    
+}
+.card-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    z-index: 1;
+    opacity: 0.7;
+    border-radius: 10px;
+    
+}
+.card-words {
+    position: relative;
+    z-index: 2;
+    padding: 5px 0 5px 10px;
+    font-size: 20px;
 }
 .logo-image {
     width: 175px;
-    /* height: 60px; */
+    height: 60px;
 }
