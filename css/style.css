@@ -202,21 +202,21 @@ body {
     color: #D0D0D0;
     /* color: none; */
     font-family: 'Lawyer Gothic Regular';
-    font-size: 12px;
+    font-size: 7px;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: .3s;
     white-space: nowrap;
     /* background-color: #7AB63B; */
     padding: 6px 7px 6px 7px;
-    border: 2px solid;
+    border: 1px solid;
     border-radius: 10px;
     border-image: 
-    linear-gradient(
+    /* linear-gradient(
       to bottom, 
       #7AB63B, 
       rgba(0, 0, 0, 0)
-    ) 1 100%;
+    ) 1 100%; */
 }
 .nav-link:hover {
     color: #7AB63B;   
@@ -240,7 +240,7 @@ body {
     height: 60px;
     border-radius: 45px 45px;
     background-image: url(../img/card-img.jpg);
-    background-image: url(../img/hz.jpg);
+    /* background-image: url(../img/hz.jpg); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 140%;
@@ -257,7 +257,7 @@ body {
     
 }
 .card-img-container::before {
-    content: "";
+    content: "ху";
     width: 46px;
     height: 46px;
     border-radius: 25px;
