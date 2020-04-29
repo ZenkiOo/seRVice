@@ -105,7 +105,7 @@ body {
 .top-row {
     width: 100%;
     height: 80px;
-    background-color: #161616;
+    /* background-color: #161616; */
     /* background-image: url(../img/platabel.png); */
     background-position: 1000px -610px;
     background-repeat: no-repeat;
@@ -202,21 +202,24 @@ body {
     color: #D0D0D0;
     /* color: none; */
     font-family: 'Lawyer Gothic Regular';
-    font-size: 7px;
+    font-size: 9px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    /* letter-spacing: 1px; */
     transition: .3s;
     white-space: nowrap;
     /* background-color: #7AB63B; */
     padding: 6px 7px 6px 7px;
     border: 1px solid;
     border-radius: 10px;
-    border-image: 
-    /* linear-gradient(
+    /* border-image: 
+    linear-gradient(
       to bottom, 
       #7AB63B, 
       rgba(0, 0, 0, 0)
     ) 1 100%; */
+    
+    box-shadow: 0 2px 7px 0 hsla(0, 0%, 4%, 0.05), 3px 27px 54px -34px rgba(0, 0, 0, 0.47);
+        
 }
 .nav-link:hover {
     color: #7AB63B;   
