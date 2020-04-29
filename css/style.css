@@ -53,10 +53,10 @@ a {
 }
 @font-face {
     font-family: 'Gubia Regular';
-    src: url(/fonts/Gubia.eot);
-    src: url(/fonts/Gubia.eot?#iefix) format('embedded-opentype'),
-    url(/fonts/Gubia.woff) format('woff'),
-    url(/fonts/Gubia.ttf) format('truetype');
+    src: url(/Fonts/Gubia.eot);
+    src: url(/Fonts/Gubia.eot?#iefix) format('embedded-opentype'),
+    url(/Fonts/Gubia.woff) format('woff'),
+    url(/Fonts/Gubia.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -68,7 +68,7 @@ body {
     width: 100%;
     color: #D0D0D0;
     position: relative;
-    background-image: url(/img/black-wall.jpg);
+    background-image: url(/Img/black-wall.jpg);
     background-repeat: no-repeat;
 }
 .body::before {
