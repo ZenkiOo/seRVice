@@ -60,6 +60,15 @@ a {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Lawyer Gothic Regular';
+    src: url(../fonts/LawyerGothic-Bold.eot);
+    src: url(../fonts/LawyerGothic-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/LawyerGothic-Bold.woff) format('woff'),
+    url(../fonts/LawyerGothic-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 body {
     font-family: 'Gubia Regular';
     line-height: 1;
@@ -94,23 +103,26 @@ body {
     z-index: 1;
 }
 .top-row {
-    min-width: 100%;
+    width: 100%;
     height: 80px;
     background-color: #161616;
-    /* background-image: url(/img/platabel.png); */
+    /* background-image: url(../img/platabel.png); */
     background-position: 1000px -610px;
     background-repeat: no-repeat;
+    
 }
-.wrapper {
+.wellcome-wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
 .top-row-container {
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
 }
 .logo-block {
-    width: 65%;
+    margin-right: 85px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -164,7 +176,7 @@ body {
 }
 .nav {
     /* padding-left: 6%; */
-    min-width: 35%;
+    /* width: 100%; */
 }
 .nav-list {
     display: flex;
@@ -180,16 +192,31 @@ body {
     margin-left: -50px;
 }
 .nav-item:nth-child(n+2) {
-    margin-left: 8%;
+    margin-left: 20px;
+}
+.nav-item{
+    
 }
 .nav-link {
-    color: #F0F0F0;
+    display: block;
+    color: #D0D0D0;
     /* color: none; */
-    font-size: 15px;
-    /* font-weight: bold; */
+    font-family: 'Lawyer Gothic Regular';
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: .3s;
+    white-space: nowrap;
+    /* background-color: #7AB63B; */
+    padding: 6px 7px 6px 7px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      #7AB63B, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
 }
 .nav-link:hover {
     color: #7AB63B;   
