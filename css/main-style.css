@@ -78,6 +78,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 
@@ -88,18 +89,13 @@ body {
 
 
 .header {
-    width: 100%;
+    padding: 0 3%;
     height: 80px;
     background-color: #161616;
     /* background-image: url(../img/platabel.png); */
-    background-position: 1000px -610px;
-    background-repeat: no-repeat;
+    /* background-position: 1000px -610px; */
+    /* background-repeat: no-repeat; */
 }
-
-/* .wellcome-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-} */
 .top-row-container {
     /* width: 100%; */
     display: flex;
@@ -107,7 +103,8 @@ body {
 }
 .logo-block {
     /* margin-right: 85px; */
-    width: 69%;
+    width: 100%;
+    padding-right: 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -120,7 +117,7 @@ body {
     display: block;
     text-align: center;
     margin-top: -9px;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     letter-spacing: .1%;
     /* width: 420px; */
 }
@@ -166,10 +163,10 @@ body {
     display: block;
     font-size: 16px;
 }
-.nav {
+/* .nav {
     margin-right: 10%;
-    /* width: 100%; */
-}
+    width: 100%;
+} */
 .nav-list {
     display: flex;
     margin-top: 27px;
@@ -241,6 +238,38 @@ body {
     background-image: linear-gradient(to right, black 0%, #434343 100%);
     background-blend-mode: multiply,multiply;
     opacity: .9;
+}
+/* .png-item-1 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-image: url(..//img/laptop.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 4;
+} */
+.wellcome-slogan {
+    margin-top: 10%;
+    margin-left: 53%;
+    /* width: 50%; */
+    /* height: 700px; */
+    font-size: 90px;
+    line-height: 0.6em;
+    position: relative;
+    z-index: 2;
+    /* background-color: rgba(255, 248, 220, 0.61); */
+}
+.wellcome-slogan::before {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 6px;
+    top: 150px;
+    left: 230px;
+    background : linear-gradient(-60deg,rgb(163, 255, 65) 50%, rgb(95, 155, 32) 100%);
+}
+.wellcome-text {
+    font-size: 60px;
 }
 
 
