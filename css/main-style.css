@@ -225,13 +225,13 @@ body {
 
 
 
-.fullscreen {
+.wellcome {
     height: 100vh;
     background-image: url(..//img/back-img.jpg);
     background-size: cover;
     position: relative;
 }
-.fullscreen::before {
+.wellcome::before {
     position: absolute;
     content: "";
     top: 0;
@@ -309,6 +309,17 @@ body {
 .two-rows {
     padding-top: 19px;
 }
+
+
+
+
+
+
+
+
+
+
+
 .faster {
     display: flex;
     background-color: #131313;
@@ -454,4 +465,15 @@ body {
 .why-text {
     font-size: 21px;
     font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 1367px) {
+    .card-icon {
+        margin-top: 15px;
+    }
+    .card-text {
+        padding: 15px 15px 5px 15px;
+    }
 }
