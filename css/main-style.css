@@ -205,10 +205,7 @@ body {
       to bottom, 
       #7AB63B, 
       rgba(0, 0, 0, 0)
-    ) 1 100%; */
-    
-    
-        
+    ) 1 100%; */       
 }
 .nav-link:hover {
     color: #000000;
@@ -248,10 +245,12 @@ body {
 
 
 
-/* .full {
-    min-height: 100vh;
-} */
-.first-block {
+
+
+.cards-block {
+    /* background-image: url(..//img/black-wall.jpg);
+    background-size: cover; */
+    background: #131313;
     display: flex;
 }
 .card {
@@ -259,23 +258,37 @@ body {
     color: rgb(165, 165, 165);
     position: relative;
     width: 14.4%;
-    background: #131313;
-    height: 400px;
+    height: 370px;
     text-align: center;
+    transition-duration: 0.5s;
 }
-.card-overlay {
+.card:hover::after {
+    opacity: 1;
+  }
+  
+  .card:hover {
+    color: #000;
+  }
+.card::after {
+    content: '';
     position: absolute;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
+    background-color: rgb(163, 255, 65);
+    background-image: linear-gradient(-60deg,rgb(163, 255, 65) 50%, rgb(95, 155, 32) 100%);
+    opacity: 0;
+    transition-duration: 0.5s;
+  }
+.card-content {
+    position: relative;
     width: 100%;
     height: 100%;
-    background: linear-gradient(-60deg,rgb(163, 255, 65) 50%, rgb(95, 155, 32) 100%);
-    opacity: 0;
-    transition: 0.7s;
     text-align: center;
+    font-weight: bold;
+    z-index: 1;
 }
-
-
 .card-icon {
     margin-top: 55px;
     color: #131313;
@@ -286,17 +299,12 @@ body {
     padding-top: 15px;
     font-size: 21px;
     font-weight: bold;
-    color: inherit;
 }
 .card-text {
     padding: 40px 20px 5px 20px;
     font-size: 18px;
-    font-weight: bold;
-    line-height: 26px;
-}
-.card-overlay:hover {
-    opacity: 1;
-    color: #131313;
+    letter-spacing: 0.02em;
+    line-height: 21px;
 }
 .two-rows {
     padding-top: 19px;
