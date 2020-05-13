@@ -80,7 +80,12 @@ body {
     flex-direction: column;
     overflow: hidden;
 }
-
+.nothing {
+    color: #cacccb;
+}
+.nothing {
+    color: #7AB63B;
+}
 
 
 
@@ -225,7 +230,7 @@ body {
 .wellcome {
     display: flex;
     height: calc(100vh + 100px);
-    background-image: url(..//img/back-img.jpg);
+    /* background-image: url(..//img/back-img.jpg); */
     background-size: cover;
     position: relative;
 }
@@ -236,9 +241,22 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to right, black 0%, #434343 100%);
+    background-image: linear-gradient(to left, black 0%, #292929 100%);
     background-blend-mode: multiply,multiply;
-    opacity: .9;
+    opacity: 0.9;
+    z-index: 7;
+}
+.wellcome::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(..//img/platacorn.png);
+    background-repeat: no-repeat;
+    background-position: 800px -250px;
+    opacity: 0.4;
     z-index: 7;
 }
 .broken {
@@ -345,6 +363,19 @@ body {
     position: relative;
     background-image: linear-gradient(to top, #434343 0%, black 100%);
 }
+.steps::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(..//img/platatopgreen.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: -100px -245px;
+    opacity: 0.2;
+}
 .steps-container {
     position: absolute;
     z-index: 9;
@@ -357,10 +388,17 @@ body {
     background: linear-gradient(to bottom, #222222 0%, rgb(19, 19, 19) 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
     box-shadow: 37px 67px 40px 10px hsla(0, 0%, 4%, 0.5), 57px 90px 54px -34px rgb(0, 0, 0);
     border-radius: 40px;
+    
 }
 .steps-items {
     display: flex;
 }
+/* .item1 {
+    background-image: url(..//img/platacorn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -30px;
+} */
 .steps-item {
     width: 25%;
     height: 350px;
@@ -469,10 +507,38 @@ body {
     z-index: 1;
 }
 .card-icon {
-    /* padding-top: 8px; */
-    color: #131313;
     width: 60px;
-    background: none;
+    height: 60px;
+    margin-left: 30px;
+    background-size: 59%;
+    background-repeat: no-repeat;
+}
+.icon1 {
+    background-image: url(..//icons/mobile.png);
+}
+.icon2{
+    background-image: url(..//icons/comp.png);
+    background-size: 100%;
+}
+.icon3 {
+    background-image: url(..//icons/laptop.png);
+    background-size: 100%;
+}
+.icon4 {
+    background-image: url(..//icons/tele.png);
+    background-size: 100%;
+}
+.icon5 {
+    background-image: url(..//icons/pad.png);
+    background-size: 70%;
+}
+.icon6 {
+    background-image: url(..//icons/micro.png);
+    background-size: 100%;
+}
+.icon7 {
+    background-image: url(..//icons/mech.png);
+    background-size: 100%;
 }
 .card-title {
     padding-top: 5px;
