@@ -223,7 +223,8 @@ body {
 
 
 .wellcome {
-    height: 100vh;
+    display: flex;
+    height: calc(100vh + 100px);
     background-image: url(..//img/back-img.jpg);
     background-size: cover;
     position: relative;
@@ -237,27 +238,79 @@ body {
     left: 0;
     background-image: linear-gradient(to right, black 0%, #434343 100%);
     background-blend-mode: multiply,multiply;
-    opacity: .9;
+    opacity: .8;
+    z-index: 7;
 }
-/* .png-item-1 {
-    position: relative;
-    width: 300px;
-    height: 300px;
+.broken {
+    position: absolute;
+    top: 170px;
+    left: 40%;
+    width: 590px;
+    height: 590px;
+    background-image: url(..//img/brokeni.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 8;
+}
+.wellcome-png {
+    display: none;
+}
+.png-item-1 {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
     background-image: url(..//img/laptop.png);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 4;
-} */
+}
+.png-item-2 {
+    position: absolute;
+    top: 35%;
+    left: 33%;
+    width: 200px;
+    height: 200px;
+    background-image: url(..//img/phone.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 4;
+}
+.png-item-3 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 15%;
+    left: 63%;
+    background-image: url(..//img/console.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 4;
+}
+.png-item-4 {
+    position: absolute;
+    left: 40%;
+    width: 250px;
+    height: 250px;
+    background-image: url(..//img/fotoap.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
 .wellcome-slogan {
+    padding: 0 0 0 10px;
     margin-top: 10%;
     margin-left: 53%;
     /* width: 50%; */
-    /* height: 700px; */
+    height: 125px;
     font-size: 90px;
     line-height: 0.6em;
     position: relative;
-    z-index: 2;
-    /* background-color: rgba(255, 248, 220, 0.61); */
+    z-index: 8;
+    background-color: rgba(255, 248, 220, 0.192);
+    box-shadow: 0 2px 17px 0 hsla(0, 0%, 4%, 0.5), 3px 27px 54px -34px rgb(0, 0, 0);
+    border-radius: 55px;
 }
 .wellcome-slogan::before {
     content: "";
@@ -265,12 +318,102 @@ body {
     width: 170px;
     height: 6px;
     top: 150px;
-    left: 230px;
+    left: 270px;
     background : linear-gradient(-60deg,rgb(163, 255, 65) 50%, rgb(95, 155, 32) 100%);
 }
 .wellcome-text {
-    font-size: 60px;
+    font-size: 55px;
+    margin-left: 47px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.steps {
+    padding-bottom: 370px;
+    position: relative;
+}
+.steps-container {
+    position: absolute;
+    z-index: 9;
+    width: 1060px;
+    height: 300px;
+    top: 50%; left: 50%;
+    margin-left: -530px;
+    margin-top: -320px;
+    background-color: #131313;
+    border-radius: 40px;
+}
+.steps-items {
+    display: flex;
+}
+.steps-item {
+    width: 25%;
+    height: 300px;
+    padding: 20px 23px 0 23px;
+    position: relative;
+}
+.steps-item::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #7AB63B;
+    background-image: url(..//icons/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 16px center;
+    bottom: -25px;
+    border-radius: 25px;
+    left: 69%;
+}
+.steps-item:nth-child(4)::after {
+    background-image: url(..//icons/done.png);
+    background-size: 67%;
+    background-position: 8px center;
+}
+.steps-icon {
+    width: 95px;
+    height: 95px;
+    border-radius: 55px;
+    background-color: rgba(255, 255, 255, 0.781);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.steps-icon-1 {
+    background-image: url(..//icons/micro.png);
+}
+.steps-icon-2 {
+    background-image: url(..//icons/calendar.png);
+}
+.steps-icon-3 {
+    background-image: url(..//icons/marker.png);
+}
+.steps-icon-4 {
+    background-image: url(..//icons/star.png);
+}
+.steps-title {
+    margin-top: 20px;
+    font-size: 21px;
+}
+.steps-text {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+
+
 
 
 
