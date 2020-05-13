@@ -353,7 +353,8 @@ body {
     top: 50%; left: 50%;
     margin-left: -560px;
     margin-top: -270px;
-    background-color: #131313;
+    /* background-color: #131313; */
+    background: linear-gradient(to bottom, #222222 0%, rgb(19, 19, 19) 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
     box-shadow: 37px 67px 40px 10px hsla(0, 0%, 4%, 0.5), 57px 90px 54px -34px rgb(0, 0, 0);
     border-radius: 40px;
 }
@@ -427,12 +428,13 @@ body {
 .cards-block {
     /* background-image: url(..//img/black-wall.jpg);
     background-size: cover; */
-    background: #131313;
+    background: linear-gradient(to bottom, #222222 0%, rgb(19, 19, 19) 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
     display: flex;
 }
 .card {
     display: block;
-    color: rgb(165, 165, 165);
+    color: rgb(190, 190, 190);
     position: relative;
     width: 14.4%;
     height: 350px;
