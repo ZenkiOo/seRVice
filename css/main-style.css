@@ -238,7 +238,7 @@ body {
     left: 0;
     background-image: linear-gradient(to right, black 0%, #434343 100%);
     background-blend-mode: multiply,multiply;
-    opacity: .8;
+    opacity: .9;
     z-index: 7;
 }
 .broken {
@@ -315,10 +315,10 @@ body {
 .wellcome-slogan::before {
     content: "";
     position: absolute;
-    width: 170px;
+    width: 160px;
     height: 6px;
-    top: 150px;
-    left: 270px;
+    top: 145px;
+    left: 275px;
     background : linear-gradient(-60deg,rgb(163, 255, 65) 50%, rgb(95, 155, 32) 100%);
 }
 .wellcome-text {
@@ -343,16 +343,18 @@ body {
 .steps {
     padding-bottom: 370px;
     position: relative;
+    background-image: linear-gradient(to top, #434343 0%, black 100%);
 }
 .steps-container {
     position: absolute;
     z-index: 9;
-    width: 1060px;
-    height: 300px;
+    max-width: 1120px;
+    height: 330px;
     top: 50%; left: 50%;
-    margin-left: -530px;
-    margin-top: -320px;
+    margin-left: -560px;
+    margin-top: -270px;
     background-color: #131313;
+    box-shadow: 37px 67px 40px 10px hsla(0, 0%, 4%, 0.5), 57px 90px 54px -34px rgb(0, 0, 0);
     border-radius: 40px;
 }
 .steps-items {
@@ -360,23 +362,23 @@ body {
 }
 .steps-item {
     width: 25%;
-    height: 300px;
-    padding: 20px 23px 0 23px;
+    height: 350px;
+    padding: 25px 25px 0 25px;
     position: relative;
 }
 .steps-item::after {
     position: absolute;
     content: "";
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
     background-color: #7AB63B;
     background-image: url(..//icons/arrow.png);
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: 16px center;
-    bottom: -25px;
-    border-radius: 25px;
-    left: 69%;
+    bottom: -8px;
+    border-radius: 22px;
+    left: 58%;
 }
 .steps-item:nth-child(4)::after {
     background-image: url(..//icons/done.png);
@@ -396,19 +398,22 @@ body {
 }
 .steps-icon-2 {
     background-image: url(..//icons/calendar.png);
+    background-position: center 16px;
 }
 .steps-icon-3 {
     background-image: url(..//icons/marker.png);
 }
 .steps-icon-4 {
     background-image: url(..//icons/star.png);
+    background-position: center 16px;
 }
+
 .steps-title {
-    margin-top: 20px;
-    font-size: 21px;
+    margin-top: 15px;
+    font-size: 26px;
 }
 .steps-text {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 18px;
 }
 
@@ -430,7 +435,7 @@ body {
     color: rgb(165, 165, 165);
     position: relative;
     width: 14.4%;
-    height: 370px;
+    height: 350px;
     text-align: center;
     transition-duration: 0.5s;
 }
@@ -462,13 +467,13 @@ body {
     z-index: 1;
 }
 .card-icon {
-    margin-top: 55px;
+    /* padding-top: 8px; */
     color: #131313;
-    width: 50px;
+    width: 60px;
     background: none;
 }
 .card-title {
-    padding-top: 15px;
+    padding-top: 5px;
     font-size: 21px;
     font-weight: bold;
 }
@@ -500,6 +505,8 @@ body {
     width: 40%;
     margin-top: 155px;
     margin-left: 10%;
+    position: relative;
+    z-index: 10;
 }
 .faster-title {
     position: relative;
@@ -512,13 +519,13 @@ body {
     content: "";
     width: 60px;
     height: 5px;
-    top: 180px;
+    top: 115px;
     left: 0;
     background-color: #7AB63B;
     border-radius: 2px;
 }
 .faster-text {
-    padding: 90px 190px 190px 0px;
+    padding: 90px 190px 10px 0px;
     font-size: 24px;
     color: #9e9e9e;
 }
@@ -595,7 +602,7 @@ body {
     background-position: center center;
 }
 .why-text-container {
-    width: 45%;
+    width: 50%;
     margin-left: 45%;
     padding-top: 100px;
     /* background-color: hsla(0, 0%, 62%, 0.411); */
@@ -643,9 +650,44 @@ body {
 
 @media screen and (max-width: 1367px) {
     .card-icon {
-        margin-top: 15px;
+        margin-top: 30px;
+    }
+    .card-title-two {
+        padding-top: 9px;
     }
     .card-text {
-        padding: 15px 15px 5px 15px;
+        padding: 30px 15px 5px 15px;
     }
+    .faster {
+        padding-top: 35px;
+    }
+    .faster-title {
+        font-size: 55px;
+    }
+    .faster-text {
+        padding: 80px 150px 180px 0px;
+    }
+    .faster-text-container {
+        margin-top: 187px;
+        margin-left: 5%;
+    }
+    .faster-img-container {
+        margin-left: -135px;
+    }
+    .faster-decor-1 {
+        left: 120px;
+    }
+    .shnor-title {
+        font-size: 55px;
+    }
+    .why-title {
+        padding-bottom: 10px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .why-text {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
 }
