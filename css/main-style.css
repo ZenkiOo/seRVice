@@ -228,65 +228,50 @@ body {
 
 .wellcome {
     width: 100%;
-    max-height: 100vh;
+    /* max-height: 100vh; */
     /* height: calc(100vh + 100px); */
     /* background-image: url(..//img/back-img.jpg); */
     /* background-size: cover; */
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .wellcome::after {
     position: absolute;
     content: "";
+    width: 100%;
+    height: 100%;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-image: linear-gradient(to top, rgb(0, 0, 0) 0%, #ffffff00 100%);
     background-blend-mode: multiply,multiply;
-    /* background-color: rgba(0, 0, 0, 0.938); */
+    /* background-color: rgba(0, 0, 0, 0.815); */
     /* opacity: 1; */
-    z-index: 99999;
+    z-index: 7;
 }
-/* .wellcome::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url(..//img/platacorn.png);
-    background-repeat: no-repeat;
-    background-position: 170px -7px;
-    background-position: 550px -130px;
-    background-size: 120%;
-    opacity: 0;
-    z-index: 9;
-} */
 .video {
-    display: none;
+    display: block;
     position: relative;
     z-index: 1;
 }
 .video__media {
     width: 100%;
     height: auto;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    display: block;
 }
 .wellcome-slogan {
     padding: 25px 15px 0 17px;
-    margin-top: 200px;
-    margin-left: 26%;
-    /* width: 50%; */
+    /* margin-top: 200px; */
+    /* margin-left: 200px; */
+    top: 200px;
+    left: 600px;
+    width: 50%;
     height: 125px;
     font-size: 90px;
     line-height: 0.6em;
     position: absolute;
-    z-index: 8;
+    z-index: 188;
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
     background-blend-mode: multiply,multiply;;
     /* background-color: rgba(0, 0, 0, 0.849); */
@@ -323,7 +308,7 @@ body {
 
 
 .steps {
-    margin-top: calc(100vh + 100px);
+    /* margin-top: calc(100vh + 100px); */
     padding-bottom: 370px;
     position: relative;
     /* background-image: linear-gradient(to top #222222 0%, black 100%); */
