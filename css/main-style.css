@@ -115,7 +115,8 @@ body {
 .logo-row {
     display: block;
     font-size: 46px;
-    /* line-height: 53px; */
+    line-height: 23px;
+    margin-top: 23px;
 }
 .logo {
     display: block;
@@ -140,7 +141,7 @@ body {
 .logo-text {
     width: 165px;
     display: inline-block;
-    margin-top: -12px;
+    /* margin-top: -92px; */
     font-size: 24px;
     font-weight: bold;
 }
@@ -436,7 +437,7 @@ body {
     display: block;
     color: rgb(190, 190, 190);
     position: relative;
-    width: 14.4%;
+    width: 16.6%;
     height: 350px;
     text-align: center;
     transition-duration: 0.5s;
@@ -654,7 +655,7 @@ body {
 .why-text-container {
     width: 50%;
     margin-left: 45%;
-    padding-top: 100px;
+    padding-top: 75px;
     /* background-color: hsla(0, 0%, 62%, 0.411); */
     color: #131313;
 }
@@ -698,6 +699,66 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+.buy {
+    background-image: url(../img/oldphone.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.buy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    opacity: 0.7;
+}
+.buy-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.buy-text {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 55px;
+    width: 763px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1367px) {
     .card-icon {
         margin-top: 20px;
@@ -733,7 +794,7 @@ body {
         font-size: 55px;
     }
     .faster-text {
-        padding: 80px 150px 180px 0px;
+        padding: 80px 150px 170px 0px;
     }
     .faster-text-container {
         margin-top: 187px;
